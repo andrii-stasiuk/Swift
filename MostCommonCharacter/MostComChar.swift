@@ -8,5 +8,5 @@ for elKey in asciiString.characters {
     }
 }
 
-let resultChar = dictCharacter.max{ a, b in a.value < b.value }!.key
-print("The character '\(resultChar)' occurs \(dictCharacter[resultChar]!) times in the string.")
+let (resultChar, resultCount) = dictCharacter.max{ a, b in a.value < b.value }!
+print("The character '\(resultChar)' occurs \(resultCount) times in the string.")
